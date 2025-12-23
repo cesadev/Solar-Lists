@@ -1,0 +1,41 @@
+header{
+    border:none;
+}
+
+.books-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.books-header-details{
+    background-color: rgb(49, 49, 49)
+}
+
+.books-main h2{
+    font-size: 18px;
+    color: rgb(140,140,140);
+    background-color: rgb(61, 61, 61);
+    padding:0.25rem 0px;
+    margin-bottom:0.23rem;
+}
+.authors-container{
+    /*background-color: blueviolet;*/
+    width: 200px;
+}
+
+.books-container{
+    /*background-color: brown;*/
+    width: 700px;
+}
+.authors-filters{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.genres-container{
+    /*background-color: rgb(49, 177, 32);*/
+    width: 350px;
+}
