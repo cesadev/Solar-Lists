@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-header {    
+body > header {    
     width: 100%;
     background-color: #1D1F1F;
     padding:0.8rem 0rem 0.8rem 0rem ;
     border-bottom: 1.5px solid #2E2F2F;
 }
-body a{
-    text-decoration: none;
-    color:  #cacaca;
+.nav-main ul li a{
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    margin:0;
+}
+.nav-main ul li a:hover {
+    background:linear-gradient(to top, rgb(53, 53, 53), rgb(48, 48, 48));
+}
+.nav-main ul {
+    gap: 7px;
+}
+.nav-main {
+    padding: 0.3rem 1rem;
 }
 body{
     margin:0;
@@ -64,7 +75,7 @@ body{
     margin: 10px;
     width: clamp(200px, 20vw, 280px);
     aspect-ratio: 1 / 1;
-    background-color: rgb(68,68,68);
+    background: linear-gradient(to top, #1D1F1F, #181818b6);
 
     display: flex;   
     justify-content: center;  
@@ -97,7 +108,6 @@ body{
 header nav ul a{
     list-style: none;
     text-decoration: none;
-    color:rgb(110,110,110);
     font-size: 14px;
 }
 header nav ul{
@@ -105,10 +115,8 @@ header nav ul{
     display: flex;
     margin:0;
     padding: 0;
-    gap:1.5em;
 }
 header nav{
-    margin:0px 16px 0px 16px;
     display: flex;
     justify-content: space-between;
 }
