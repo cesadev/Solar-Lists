@@ -1,22 +1,41 @@
 header{
     border:none;
 }
-
+body{
+    font-size: 14px;
+}
+body>header{
+    display: flex;
+    flex-direction: column; 
+}
+main>h1{
+    padding:20px 10px 0px 30px;
+    color: rgb(255, 255, 255);
+}
 .books-main{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 30px;
+    justify-content: flex-start;
+    margin: 0px 4rem;
+    gap: 2rem;
 }
-
+.books-main>section>header>h2{
+    padding-left: 7px;
+}
+.books-main>section>header>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+}
 .books-header-details{
-    background-color: rgb(49, 49, 49)
+    background-color: rgb(43, 43, 43)
 }
 
 .books-main h2{
-    font-size: 18px;
-    color: rgb(140,140,140);
-    background-color: rgb(61, 61, 61);
+    font-size: 16px;
+    color: rgb(160, 160, 160);
+    background-color: rgb(56, 56, 56);
     padding:0.25rem 0px;
     margin-bottom:0.23rem;
 }
@@ -27,15 +46,70 @@ header{
 
 .books-container{
     /*background-color: brown;*/
-    width: 700px;
+    flex: 1; min-width: 500px;
+}
+.books-list-container{
+    margin-top: 3rem;
+    height: 700px;
+}
+.books-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+.books-list li{
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    aspect-ratio: 11/8;
+    max-width: 260px;
 }
 .authors-filters{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; 
+    margin-top: 3rem;
+}
+.authors-filters label{
+    background-color: #2b2b2b;
+    color: rgb(160,160,160);
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.25rem 0.4rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor:pointer;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + label {
+    background: #4f46e5;
+    color: white;
+}
 .genres-container{
     /*background-color: rgb(49, 177, 32);*/
     width: 350px;
+}
+.genres-list-container{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-top: 3rem;
+}
+
+.genres-list-container label{
+    background-color: #2b2b2b;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.25rem 0.4rem 0.6rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    gap:0.6rem;
 }

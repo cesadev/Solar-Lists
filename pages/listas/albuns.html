@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/main.css">
-    <title>Lista | Álbuns</title>
+    <link rel="stylesheet" href="../../styles/books.css">
+    <title>Lista | Livros</title>
 </head>
 <body>
     <header>
@@ -21,28 +22,106 @@
                 <li><a href="#">Tema</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
-        <ol>
-            <li>Please Please Me (1963) - The Beatles</li>
-            <li>With the Beatles (1963) - The Beatles</li>
-            <li>A Hard Day's Night (1964) - The Beatles</li>
-            <li>Beatles for Sale (1964) - The Beatles</li>
-            <li>Help! (1965) - The Beatles</li>
-            <li>Rubber Soul (1965) - The Beatles</li>
-            <li>Revolver (1966) - The Beatles</li>
-            <li>Sgt. Pepper's Lonely Hearts Club Band (1967) - The Beatles</li>
-            <li>The Beatles (White Album) (1968) - The Beatles</li>
-            <li>Yellow Submarine (1969) - The Beatles</li>
-            <li>Abbey Road (1969) - The Beatles</li>
-            <li>Let It Be (1970) - The Beatles</li>
+        <h1>Lista de Álbuns</h1>
+        <div class="books-main">
 
+            <section class="authors-container">
+                <header>
+                    <h2>Artistas</h2>
+                    <div class="books-header-details">
+                        <img src="../../assets/icons/person.svg" alt="Uma pessoa">
+                        Lista de Artistas
+                    </div>
+                </header>
+                <div class="authors-filters">
+                    <input type="checkbox" id="Vladimir-Lenin">
+                    <label for="Vladimir-Lenin">
+                        <img src="../../assets/icons/person.svg" alt="Uma Pessoa">
+                        The Beatles
+                    </label>
 
-            <li>
-                <a href="../error404.html">Adicionar Novo Elemento na Lista</a>
-            </li>
-        </ol>
+                    <input type="checkbox" id="Angela-Davis">
+                    <label for="Angela-Davis">
+                        <img src="../../assets/icons/person.svg" alt="Uma Pessoa">
+                        The Smiths
+                    </label>
+
+                    <input type="checkbox" id="Florestan-Fernandes">
+                    <label for="Florestan-Fernandes">
+                        <img src="../../assets/icons/person.svg" alt="Uma Pessoa">
+                        Radiohead
+                    </label>
+                </div>
+            </section>
+
+            <section class="books-container">
+                <header class="books-header">
+                    <h2>Estante de Álbuns</h2>
+                    <div class="books-header-details">
+                        <img src="../../assets/icons/open-book.svg" alt="Livro Aberto">
+                        Adicione álbuns à sua estante e acompanhe o estado deles.
+                    </div>    
+                </header>
+                <div class="books-filters"></div>
+                <div class="books-list-container">
+                    <ul class="books-list">
+                        <li>Álbum1</li>
+                        <li>Álbum2</li>
+                        <li>Álbum3</li>
+                        <li>Álbum4</li>
+                        <li>Álbum5</li>
+                        <li>Álbum6</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="genres-container">
+                <header class="genres-header">
+                    <h2>Gêneros</h2>
+                    <div class="books-header-details">
+                        <img src="../../assets/icons/bookmark.svg" alt="Marcador de Livros">
+                        Use os marcadores para filtrar os seus álbuns.
+                    </div>   
+                </header>
+                <div class="genres-list-container">
+                    <input type="checkbox" id="Pautas-raciais">
+                    <label for="Pautas-raciais">
+                        <img src="../../assets/icons/open-book.svg" alt="Icone de Livro">
+                        MPB
+                    </label>
+
+                    <input type="checkbox" id="Genero-e-sexualidade">
+                    <label for="Genero-e-sexualidade">
+                        <img src="../../assets/icons/open-book.svg" alt="Icone de Livro">
+                        Violão
+                    </label>
+
+                    <input type="checkbox" id="consciencia">
+                    <label for="consciencia">
+                        <img src="../../assets/icons/open-book.svg" alt="Icone de Livro">
+                        Samba
+                    </label>
+
+                    <input type="checkbox" id="Historia-do-brasil">
+                    <label for="Historia-do-brasil">
+                        <img src="../../assets/icons/open-book.svg" alt="Icone de Livro">
+                        Bossa Nova
+                    </label>
+
+                    <input type="checkbox" id="Comunismo">
+                    <label for="Comunismo">
+                        <img src="../../assets/icons/open-book.svg" alt="Icone de Livro">
+                        Rap
+                    </label>
+                </div> 
+            </section>
+        </div>
     </main>
+
+    </div>
     <footer>
 
     </footer>
