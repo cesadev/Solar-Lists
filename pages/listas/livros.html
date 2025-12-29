@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/livros.css">
-    <title>Solar | Template</title>
+    <link rel="shortcut icon" href="../../assets/icons/rocket-launch.svg" type="image/x-icon">
+    <title>Solar | Livros</title>
 </head>
 <body>
     <header>
@@ -23,8 +24,131 @@
             </ul>
         </nav>
     </header>
-    <main >
+    <main class="main-livros">
+        <header>
+            <a href="../listas.html" class="livros-home-btn" style="text-decoration: none; margin-bottom: 15px;">
+                <img src="../../assets/icons/chevron-backward.svg" alt="Voltar">
+                Voltar para a Home
+            </a>
+            <h1 style="cursor:pointer;">Minha Biblioteca</h1>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 96%; height: 10px; margin-bottom: 0;">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+                <span style="padding-right: 8px; font-size: 14px;">5/8</span>
+            </div>
+            <div class="livros-section-buttons">
+                <button>
+                    <img src="../../assets/icons/open-book-white.svg" alt="Livro aberto">
+                    <span>Livros</span>
+                </button>
+                <button>
+                    <img src="../../assets/icons/statistics.svg" alt="Estatísticas" >
+                    <span>Estatísticas</span>
+                </button>
+            </div>
+        </header>
+        <div class="livros-container">
+            <form class="livros-filtros">
+                <input type="search" placeholder="Título do livro...">
+                <input type="search" placeholder="Autor...">
+                <input type="number" placeholder="Ano...">
+                <button>
+                    <img src="../../assets/icons/add.svg" alt="Adicionar">
+                    <span>Adicionar</span>
+                </button>
+            </form>
+            <button class="autor-filtros">
+                <img src="../../assets/icons/filter-list.svg" alt="Filtrar">
+                Filtrar por autor
+            </button>
+            <div class="livros-table-wrapper">
+                <table class="livros-table">
+                    <thead>
+                        <tr>
+                            <th>✓</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Ano</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Raízes do Brasil</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1936</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Cobra de Vidro</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1944</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Monções</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1945</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Caminhos e Fronteiras</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1957</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Visão do Paraíso: Os motivos edênicos no descobrimento e colonização do Brasil</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1959</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Do Império à República</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1972</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Tentativas de Mitologia</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1979</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Antologia dos poetas brasileiros na fase colonial</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1952</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Expansão paulista em fins do século XVI e princípio do século XVII</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1948</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>O Extremo Oeste</td>
+                            <td>Sérgio Buarque de Holanda</td>
+                            <td>1986</td>
+                            <td><button>Não lido</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
     <footer>
 

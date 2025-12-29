@@ -20,7 +20,7 @@ body > header {
     gap: 7px;
 }
 .nav-main {
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 1rem;   
 }
 body{
     margin:0;
@@ -97,6 +97,7 @@ body{
     overflow: hidden;
     padding: 0px 0px;
     display: flex;
+    justify-content: space-between;
     margin: 0px 10px 10px 0px;
 }
 
