@@ -23,13 +23,38 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="listas-main">
+        <header class="listas-header">
+            <h1>Minhas Listas</h1>
+            <p>Organize as suas tarefas e cumpra os seus objetivos.</p>
+        </header>
+
         <ul class="list-itens">
-            <li>
+            <li class="list-elementos">
                 <a href="listas/livros.html">Livros</a>
+                <div class="elementos-itens">
+                    <p>15 itens</p>
+                    <p class="acertos">5/15</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 33.33%;"></div>
+                </div>
             </li>
-            <li>
+            <li class="list-elementos">
                 <a href="listas/albuns.html">Albuns</a>
+                <div class="elementos-itens">
+                    <p>8 itens</p>
+                    <p class="acertos">3/8</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 37.5%;"></div>
+                </div>
+            </li>
+            <li class="nova-lista">
+                <a href="#">
+                    <img src="../assets/icons/add-box.svg" alt="Adicionar Lista">
+                    Nova lista
+                </a>
             </li>
         </ul>
     </main>

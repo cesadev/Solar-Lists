@@ -11,9 +11,10 @@ body > header {
     padding: 0.6rem 1rem;
     border-radius: 20px;
     margin:0;
+    transition: background-color 0.25s ease;
 }
 .nav-main ul li a:hover {
-    background:linear-gradient(to top, rgb(53, 53, 53), rgb(48, 48, 48));
+    background-color:rgb(48, 48, 48);
 }
 .nav-main ul {
     gap: 7px;
@@ -63,6 +64,81 @@ body{
     font-size: 50px;
     margin-bottom: 15px;
 }
+
+
+
+.listas-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listas-header{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listas-header h1{
+    border: 0px;
+    margin: 30px 0px 5px;
+    color: #bdbdbd;
+}
+
+
+
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0px 0px;
+    display: flex;
+    margin: 0px 10px 10px 0px;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #6c63ff, #8b5cf6);
+    border-radius: 10px;
+}
+
+.list-elementos{
+    flex-direction: column;
+    background: #232525;
+    transition: transform 0.4s ease;
+}
+.elementos-itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 25px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.elementos-itens p{
+    margin:5px 0px;
+}
+.list-elementos:hover{
+    transform: translateY(-10px);
+}
+.list-elementos:hover a{
+    color: rgb(216, 216, 216);
+}
+.list-elementos .acertos{
+    color: #4a8654;
+}
+.list-itens  a{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
 .list-itens{
     list-style: none;
     display: flex;
@@ -74,37 +150,50 @@ body{
 .list-itens li{
     margin: 10px;
     width: clamp(200px, 20vw, 280px);
-    aspect-ratio: 1 / 1;
-    background: linear-gradient(to top, #1D1F1F, #181818b6);
+    aspect-ratio: 2 / 1;
 
-    display: flex;   
-    justify-content: center;  
-    align-items: center;
-
-    border-radius: 8px;
-    border: 2px solid rgb(68,68,68);
-}
-.list-itens li:hover{
-    border:2px solid rgb(140, 140, 140);
-}
-.list-itens a{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
-    align-items: center;    
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: rgb(167, 167, 167);
-    font-weight: bold;
-    padding-bottom: 15px;   
-    text-align: center;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding: 15px;
     box-sizing: border-box;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+    border-radius: 20px;
+}
+.nova-lista{
+    border: 2px dashed rgb(87, 87, 87);
+}
+.nova-lista:hover{
+    border: 2px dashed rgb(125,125,125);
+}
+.nova-lista a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nova-lista img{
+    width: 3rem;
+    margin-bottom: 10px;
+    background-color: rgb(40, 40, 40);
+    transition: filter 0.4s ease;
+    border-radius: 8px;
+    filter: brightness(1);
 }
 
-.list-itens li:hover a {
-    color: rgb(255, 255, 255);
+.nova-lista:hover img{
+    filter: brightness(1.2);
 }
+
+
+
+
+
+
+
 header nav ul a{
     list-style: none;
     text-decoration: none;
