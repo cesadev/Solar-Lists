@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/livros.css">
+    <link rel="shortcut icon" href="../../assets/icons/rocket-launch.svg" type="image/x-icon">
+    <title>Solar | Livros</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <ul class="nav-pages">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../listas.html">Listas</a></li>
+                <li><a href="../habitos.html">Hábitos</a></li>
+                <li><a href="../ferramentas.html">Ferramentas</a></li>
+                <li><a href="../ideias.html">Idéias</a></li>
+            </ul>
+            <ul class="nav-user">
+                <li><a href="#">Idioma</a></li>
+                <li><a href="#">Tema</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-livros">
+        <header>
+            <a href="../listas.html" class="livros-home-btn" style="text-decoration: none; margin-bottom: 15px;">
+                <img src="../../assets/icons/chevron-backward.svg" alt="Voltar">
+                Voltar para a Home
+            </a>
+            <h1 style="cursor:pointer;">Minha Biblioteca</h1>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 96%; height: 10px; margin-bottom: 0;">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+                <span style="padding-right: 8px; font-size: 14px;">5/8</span>
+            </div>
+            <div class="livros-section-buttons">
+                <button>
+                    <img src="../../assets/icons/library-music.svg" alt="Biblioteca Musical">
+                    <span>Álbuns</span>
+                </button>
+                <button>
+                    <img src="../../assets/icons/statistics.svg" alt="Estatísticas" >
+                    <span>Estatísticas</span>
+                </button>
+            </div>
+        </header>
+        <div class="livros-container">
+            <form class="livros-filtros">
+                <input type="search" placeholder="Nome do Álbum...">
+                <input type="search" placeholder="Artista...">
+                <input type="number" placeholder="Ano...">
+                <button>
+                    <img src="../../assets/icons/add.svg" alt="Adicionar">
+                    <span>Adicionar</span>
+                </button>
+            </form>
+            <button class="autor-filtros">
+                <img src="../../assets/icons/filter-list.svg" alt="Filtrar">
+                Filtrar por artista
+            </button>
+            <div class="livros-table-wrapper">
+                <table class="livros-table">
+                    <thead>
+                        <tr>
+                            <th>✓</th>
+                            <th>Nome do Álbum</th>
+                            <th>Artista</th>
+                            <th>Ano</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Samba Esquema Novo</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1963</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Sacundin Ben Samba</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1964</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Ben É Samba Bom</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1964</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Big Ben</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1965</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>O Bidú: Silêncio no Brooklin</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1967</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Jorge Ben</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1969</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Força Bruta</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1970</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Negro É Lindo</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1971</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Ben</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1972</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>10 Anos Depois</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1973</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>A Tábua de Esmeralda</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1974</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Gil & Jorge: Ogum, Xangô</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1975</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Solta o Pavão</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1975</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>África Brasil</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1976</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Tropical</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1977</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>A Banda do Zé Pretinho</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1978</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Salve Simpatia</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1979</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Alô Alô, Como Vai?</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1980</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Bem-vinda Amizade</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1981</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Dádiva</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1983</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Sonsual</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1984</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Ben Brasil</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1986</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Ben Jor</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1989</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>23</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1993</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Homo Sapiens</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1995</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Músicas Para Tocar em Elevador</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>1997</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Reactivus Amor Est (Turba Philosophorum)</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>2004</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Recuerdos de Asunción 443</td>
+                            <td>Jorge Ben Jor</td>
+                            <td>2007</td>
+                            <td><button>Não Lido</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
